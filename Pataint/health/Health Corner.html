@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Health Corner.css">
+    <title>Health Corner</title>
+</head>
+<body>
+<div class="container">
+<div class="heading">Exercises Section</div>
+<div class="video-container">
+    <div class="video">
+        <video src="video1.mp4"></video>
+    </div>
+
+    <div class="video">
+         <video src="video2.mp4"></video>
+     </div>
+
+    <div class="video">
+        <video src="video3.mp4"></video>
+    </div>
+
+    <div class="video">
+        <video src="vedio4.mp4"></video>
+    </div>
+
+    <div class="video">
+        <video src="video5.mp4"></video>
+    </div>
+
+    <div class="video">
+        <video src="video6.mp4"></video>
+    </div>
+</div> 
+</div>
+
+<div class="container">
+    <div class="heading">Awareness Section</div>
+    <div class="video-container">
+        <div class="video">
+            <video src="video7.mp4" muted></video>
+        </div>
+    
+        <div class="video">
+             <video src="video8.mp4" muted></video>
+         </div>
+    
+        <div class="video">
+            <video src="video9.mp4" muted></video>
+        </div>
+    
+        <div class="video">
+            <video src="video2.mp4"></video>
+        </div>
+    
+    </div> 
+    </div>
+<script> 
+var video = document.querySelectorAll('video')
+video.forEach(play => play.addEventListener('click' ,() =>{
+    play.classList.toggle('active');
+    if (play.paused) {
+        play.play();
+    }else{
+        play.paused();
+        play.currentTime = 0;
+    }
+}));
+</script>
+</body>
+</html>
