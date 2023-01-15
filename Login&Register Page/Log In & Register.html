@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="Log In & Register.css">
+        <title>Log In & Register Form</title>
+    </head>
+    <body>
+        
+        <div class="hero">
+            <div class="form-box">
+                <div class="button-box"> 
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                </div>
+                <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder=" Enter Usernamw" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn">Log In</button>
+                </form>
+                <form id="register" class="input-group">
+                    <input type="text" class="input-field" placeholder=" Enter Your Name" required>
+                    <input type="email" class="input-field" placeholder="Enter Email" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <label for="gender" class="input-field"> Select your Gender</label>
+                    <select name="gender" class="input-field">
+                        <option value="none" selected>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <label for="type" class="input-field"> Select your Type</label>
+                    <select name="type" class="input-field">
+                        <option value="none" selected>Type</option>
+                        <option value="doctor">Doctor</option>
+                        <option value="patient">Patient</option>
+                    </select>
+                    <input type="date" class="input-field" placeholder="Date of Birth" required>
+                    <input type="checkbox" class="check-box"><span>I agree to terms & conditions</span>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+                
+            </div>
+        </div>
+        <script src="Log In & Register.js"></script>
+    </body>
+</html>
